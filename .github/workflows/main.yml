@@ -20,9 +20,7 @@ jobs:
         run: dotnet tool install --global Cake.Tool --version 1.2.0
 
       - name: Run the Cake script
-        uses: cake-build/cake-action@v1
-        with:
-          verbosity: Diagnostic
+        run: dotnet cake build.cake --verbosity=Diagnostic
 
       - uses: actions/upload-artifact@v4
         with:
