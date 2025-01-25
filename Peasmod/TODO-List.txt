@@ -22,5 +22,6 @@ GAMEMODES:
 * Zombie
 * Cops and Robbers
 * Hide and Seek
+*update to 24.6.18
 
 ALTES ZEUG!!
