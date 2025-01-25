@@ -22,6 +22,7 @@ jobs:
       - name: Setup PATH
         run: |
           echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
+          echo "GamePlatform=Steam" >> $GITHUB_ENV
 
       - name: Restore dependencies
         run: dotnet restore
