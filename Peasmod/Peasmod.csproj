@@ -7,8 +7,8 @@
         <Authors>Peasplayer</Authors>
         <LangVersion>preview</LangVersion>
 
-        <GameVersion Condition="'$(GamePlatform)' == 'Steam'">2022.3.29</GameVersion>
-        <GameVersion Condition="'$(GamePlatform)' == 'Itch'">2022.3.29</GameVersion>
+        <GameVersion Condition="'$(GamePlatform)' == 'Steam'">2024.6.18</GameVersion>
+        <GameVersion Condition="'$(GamePlatform)' == 'Itch'">2024.6.18</GameVersion>
     </PropertyGroup>
 
     <ItemGroup>
