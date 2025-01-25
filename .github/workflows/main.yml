@@ -11,15 +11,17 @@ jobs:
         with:
           submodules: true
 
-      - name: Setup Environment Variables
-        run: |
-          echo "AmongUs=/path/to/AmongUs" >> $GITHUB_ENV
-          echo "GamePlatform=Steam" >> $GITHUB_ENV
-
       - name: Setup .NET
         uses: actions/setup-dotnet@v1
         with:
           dotnet-version: 6.x
+
+      - name: Install Cake Tool
+        run: dotnet tool install --global Cake.Tool --version 1.2.0
+
+      - name: Setup PATH
+        run: |
+          echo "$HOME/.dotnet/tools" >> $GITHUB_PATH
 
       - name: Restore dependencies
         run: dotnet restore
