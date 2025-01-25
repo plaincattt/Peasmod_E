@@ -16,6 +16,9 @@ jobs:
         with:
           dotnet-version: 6.x
 
+      - name: Install Cake Tool
+        run: dotnet tool install --global Cake.Tool --version 1.2.0
+
       - name: Run the Cake script
         uses: cake-build/cake-action@v1
         with:
